@@ -1,3 +1,14 @@
+/////////////////////////////////////////////
+//                                         //
+//          Open Battle Simulator          //
+//                                         //
+//             Trevor Clark                //
+//  -------------------------------------  //
+//                                         //
+//            initializer.cpp              //
+//                                         //
+/////////////////////////////////////////////
+
 #include "initializer.h"
 
 using json = nlohmann::json;

@@ -2,19 +2,21 @@
 //                                         //
 //          Open Battle Simulator          //
 //                                         //
+//             Trevor Clark                //
+//  -------------------------------------  //
 //                                         //
+//               obsim.cpp                 //
 //                                         //
 /////////////////////////////////////////////
 
 
 // INITIAL GOAL:
-//  ONLY SUPPORT GEN 1, THEN EXTEND SUPPORT
+//  ONLY SUPPORT GEN 3, THEN EXTEND SUPPORT
 
 #include <iostream>
 #include <vector>
 
 #include "initializer.h"
-// #include "terminator.h"
 #include "pokemonData.h"
 
 int main(int argc, char** argv)
@@ -25,7 +27,6 @@ int main(int argc, char** argv)
 
     // Declare Objects
     Initializer init;
-    // Terminator terminate;
 
     // Execution Starts Here
     init.InitializePokemonData(pokeDataArr, pokeDataLength);
@@ -37,6 +38,5 @@ int main(int argc, char** argv)
         std::cout << pokeDataArr.at(i);
     }
 
-    //terminate.FreePokeDataArr(pokeDataArr); 
     return 0;
 }

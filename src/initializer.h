@@ -1,3 +1,14 @@
+/////////////////////////////////////////////
+//                                         //
+//          Open Battle Simulator          //
+//                                         //
+//             Trevor Clark                //
+//  -------------------------------------  //
+//                                         //
+//             initializer.h               //
+//                                         //
+/////////////////////////////////////////////
+
 // Initializes all data fields / arrays from JSON files
 
 #pragma once
