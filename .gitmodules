@@ -1,3 +1,6 @@
 [submodule "pokemon.json"]
 	path = pokemon.json
 	url = https://github.com/fanzeyi/pokemon.json
+[submodule "json"]
+	path = json
+	url = https://github.com/nlohmann/json
