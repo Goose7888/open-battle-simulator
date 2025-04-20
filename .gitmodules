@@ -1,9 +1,3 @@
-[submodule "jsoncpp"]
-	path = jsoncpp
-	url = https://github.com/open-source-parsers/jsoncpp
 [submodule "pokemon.json"]
 	path = pokemon.json
 	url = https://github.com/fanzeyi/pokemon.json
-[submodule "json"]
-	path = json
-	url = git@github.com:nlohmann/json.git
