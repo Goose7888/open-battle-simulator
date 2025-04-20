@@ -5,9 +5,13 @@ project(OpenBattleSimulator VERSION 0.1 LANGUAGES CXX)
 # Main executable
 add_executable(OBSim 
     ./src/obsim.cpp
+    ./src/initializer.cpp
 )
 
-set(CMAKE_TOOLCHAIN_FILE /home/goose/dev/vcpkg/scripts/buildsystems/vcpkg.cmake)
+# Include directory to link library
+target_include_directories(OBSim
+    PUBLIC ./json/include/
+)
 
 # Other Tools
 #[=[
