@@ -36,4 +36,4 @@ OBSim
 I'm a beginner (if you couldn't tell).
 
 In particular, I'm still learning git's branch structuring and CMake.
-If you have any tips, concerns, or vigorous beratement, feel free to message me [here] (I'm setting up a new email... hang on)
+If you have any tips, concerns, or vigorous beratement, feel free to message me at <cynder@goose-games.com>
