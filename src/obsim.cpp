@@ -1,4 +1,10 @@
-
+/////////////////////////////////////////////
+//                                         //
+//          Open Battle Simulator          //
+//                                         //
+//                                         //
+//                                         //
+/////////////////////////////////////////////
 
 
 // INITIAL GOAL:
@@ -8,20 +14,29 @@
 #include <vector>
 
 #include "initializer.h"
+// #include "terminator.h"
 #include "pokemonData.h"
 
 int main(int argc, char** argv)
 {
     // Vars for reference arrays
-    int pokeDataLength = 151;
+    int pokeDataLength = 387;
     std::vector<PokemonData> pokeDataArr;
 
     // Declare Objects
     Initializer init;
+    // Terminator terminate;
 
     // Execution Starts Here
     init.InitializePokemonData(pokeDataArr, pokeDataLength);
-    //init.PrintPokemonData();
 
+
+    // Test for correct capturing of data
+    for (int i = 0; i < pokeDataArr.size() - 1; i++)
+    {
+        std::cout << pokeDataArr.at(i);
+    }
+
+    //terminate.FreePokeDataArr(pokeDataArr); 
     return 0;
 }

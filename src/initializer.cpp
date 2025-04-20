@@ -22,21 +22,29 @@ void Initializer::InitializePokemonData(std::vector<PokemonData>& pokeDataArray,
 
     for (int i = 0; i < length; i++)
     {
-        // std::cout << pokeData[i] << std::endl;
-
         // Capture data points into arrays
         int id = pokeData[i]["id"];
         std::string english = pokeData[i]["name"]["english"];
+        std::string japanese = pokeData[i]["name"]["japanese"];
+        std::string chinese = pokeData[i]["name"]["chinese"];
+        std::string french = pokeData[i]["name"]["french"];
+        std::string type1 = pokeData[i]["type"][0];
+        std::string type2 = "null";
+        int hp = pokeData[i]["base"]["HP"];
+        int attack = pokeData[i]["base"]["Attack"];
+        int defense = pokeData[i]["base"]["Defense"];
+        int spAttack = pokeData[i]["base"]["Sp. Attack"];
+        int spDefense = pokeData[i]["base"]["Sp. Defense"];
+        int speed = pokeData[i]["base"]["Speed"];
 
-        std::cout << "No " << id << " " << english << std::endl;
-        
+        // Create New Entry for global array
+        PokemonData* newData = new PokemonData(
+                id, english, japanese, chinese, french,
+                type1, type2, hp, attack, defense, 
+                spAttack, spDefense, speed);
+
+        pokeDataArray.push_back(*newData);
     }
-
-
 }
 
 
-void Initializer::PrintPokemonData()
-{
-    std::cout << std::setw(4) << pokeData << std::endl;
-}

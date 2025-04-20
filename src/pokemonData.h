@@ -2,6 +2,8 @@
 #pragma once
 
 #include <string>
+#include <iostream>
+#include <iomanip>
 
 class PokemonData {
     public:
@@ -21,7 +23,8 @@ class PokemonData {
             // int base speed
         PokemonData(int, std::string, std::string, std::string, std::string,
                 std::string, std::string, int, int, int, int, int, int);
-        PokemonData();
+
+        friend std::ostream& operator<< (std::ostream& os, const PokemonData& pData);
 
     private:
         
@@ -53,4 +56,7 @@ class PokemonData {
             int spDefense;
             int speed;
         } base;
+
+
+
 };

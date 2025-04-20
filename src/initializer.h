@@ -22,8 +22,6 @@ class Initializer {
         // void initializeMoveData(Move*, int);
 
         // void initializeItemData(Item*, int);
-        
-        void PrintPokemonData();
     
     private:
         json pokeData;
