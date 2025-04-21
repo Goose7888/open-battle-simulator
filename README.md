@@ -11,8 +11,7 @@ is the main goal right now.
 # Build Instructions
 
 CMake needs to be installed. The project is configured
-with CMake 3.30 as the minimum version, but that will likely
-be lowered.
+with CMake 3.18 as the minimum version.
 
 There may be things requiring gcc and Linux... Hopefully not! :D
 

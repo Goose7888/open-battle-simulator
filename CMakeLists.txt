@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.18)
 
 project(OpenBattleSimulator VERSION 0.1 LANGUAGES CXX)
 
@@ -8,7 +8,6 @@ set(CMAKE_BUILD_TYPE Debug)
 add_executable(OBSim 
     ./src/obsim.cpp
     ./src/initializer.cpp
-    ./src/terminator.cpp
     ./src/pokemonData.cpp
 )
 
