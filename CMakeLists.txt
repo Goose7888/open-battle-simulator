@@ -9,6 +9,9 @@ add_executable(OBSim
     ./src/obsim.cpp
     ./src/initializer.cpp
     ./src/pokemonData.cpp
+    ./src/team.cpp
+    ./src/battle.cpp
+    ./src/pokemon.cpp
 )
 
 # Include directory for compiler

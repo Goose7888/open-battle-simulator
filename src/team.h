@@ -11,6 +11,7 @@
 
 #pragma once
 #include <vector>
+#include <iostream>
 #include "pokemon.h"
 
 // Rules for a team:
@@ -26,12 +27,29 @@ class Team
         //   (nullptr is ok. Team will be modified
         //   so null spots always some list in team list)
         Team(Pokemon* p1, Pokemon* p2, Pokemon* p3,
-                Pokemon* p4, Pokemon* p5, Pokemon* p6)
+                Pokemon* p4, Pokemon* p5, Pokemon* p6);
         
         // Swaps position of two team members
         // Will fail if either position points to nullptr
         // Returns true on success; false on fail
         bool Swap(int pos1, int pos2);
+
+
+        // Accessors
+        const int GetTeamCount() { return teamCount; }
+
+        friend std::ostream& operator<<(std::ostream& os, Team& tm)
+        {
+            os << "There are " << tm.teamCount << " Pokemon:" << std::endl;
+
+            for (int i = 0; i < tm.teamCount; i++)
+            {
+                os << i + 1 << ": " << std::endl;
+                os << *tm.team.at(i) << std::endl;
+            }
+
+            return os;
+        }
             
     private:
         // This vector should never get modified
@@ -43,4 +61,4 @@ class Team
         // the constructor
         int teamCount;
 
-}
+};

@@ -14,7 +14,7 @@
 Team::Team(Pokemon* p1, Pokemon* p2, Pokemon* p3,
         Pokemon* p4, Pokemon* p5, Pokemon* p6)
 {
-    teamCount = 0
+    teamCount = 0;
     // Pre-allocate 6 spots in the team. 
     team.reserve(6);
 
@@ -54,3 +54,5 @@ Team::Team(Pokemon* p1, Pokemon* p2, Pokemon* p3,
     for (int i = 0; i < 6 - teamCount; i++)
         team.push_back(nullptr);
 }
+
+
