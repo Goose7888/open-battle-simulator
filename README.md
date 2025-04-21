@@ -23,6 +23,7 @@ There may be things requiring gcc and Linux... Hopefully not! :D
 ```
 git clone https://github.com/Goose7888/OBSim --recurse-submodules
 cd OBSim
+mkdir build
 cmake -B build
 cmake --build build
 cd build
