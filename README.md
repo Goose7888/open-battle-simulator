@@ -5,8 +5,23 @@ This is Open Battle Simulator - an open source replica of Pokemon Battles.
 This project intends do nothing more than a headless program that 
 other projects can use as C++ library.
 
-Additionally, imitating the Pokemon Ruby and Saphhire mechanics
+Additionally, imitating the Pokemon Ruby and Sapphire mechanics
 is the main goal right now.
+
+# Features
+
+The end goal is for this program to act as a library for a separate program to link to. 
+For now (for lack of experience) an interactive console program only is on the works. 
+
+Feature Wishlist:
+
+- Team Builder
+    - A way to build, export, and import teams.
+- Battle Queue
+    - Battles can be queued up, then simulated quickly.
+- Gneration Picker
+    - Pokemon Battles from every generation can be used.
+
 
 # Build Instructions
 

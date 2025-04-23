@@ -20,8 +20,11 @@
 class Pokemon 
 {
     public:
+
+        Pokemon(PokemonData& data, char gender);
         
-        friend std::ostream& operator<<(ostream& os, Pokemon& poke);
+
+        friend std::ostream& operator<<(std::ostream& os, Pokemon& poke);
 
     private:
         PokemonData* data;

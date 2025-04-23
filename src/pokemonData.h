@@ -34,6 +34,8 @@ class PokemonData {
         PokemonData(int, std::string, std::string, std::string, std::string,
                 std::string, std::string, int, int, int, int, int, int);
 
+        const std::string GetName() { return name.english; }
+
         friend std::ostream& operator<< (std::ostream& os, const PokemonData& pData);
 
     private:
@@ -43,7 +45,7 @@ class PokemonData {
         // Similar to index of array
         int id;
 
-        // Name of Pokemon (multi-language support)
+        // Name of Pokemon (probably going to just stick with English)
         struct {
             std::string english;
             std::string japanese;
